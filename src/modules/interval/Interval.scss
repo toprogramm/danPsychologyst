@@ -1,0 +1,6 @@
+.interval {
+  height: 100px;
+  @media (max-width: 600px) {
+    height: 50px;
+  }
+}

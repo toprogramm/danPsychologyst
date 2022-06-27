@@ -1,0 +1,32 @@
+@import "../fontProp/fontProp.scss";
+.headLine {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 15px;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: #eaad37;
+  @media screen and (max-width: 600px) {
+    height: 44px;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+}
+
+.motivationPost {
+  font-size: $h3;
+  @media (max-width: 600px) {
+    margin-top: 5px;
+    font-size: $h5;
+  }
+}
+.logo {
+  height: 55px;
+  width: auto;
+  margin-left: auto;
+  @media screen and (max-width: 600px) {
+    height: 30px;
+  }
+}

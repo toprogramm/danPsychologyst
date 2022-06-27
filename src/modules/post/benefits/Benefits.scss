@@ -1,0 +1,27 @@
+@import "../../fontProp/fontProp.scss";
+.benefits {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 25px;
+  align-self: center;
+  @media (max-width: 600px) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+.benefit {
+  font-size: 30px;
+  margin-left: 20px;
+  @media (max-width: 600px) {
+    font-size: $h5;
+  }
+}
+.moreBenefit {
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 20px;
+  @media (max-width: 600px) {
+    margin-left: 0px;
+  }
+}
