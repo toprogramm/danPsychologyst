@@ -1,5 +1,5 @@
 import "./Benefits.scss";
-function Benefits() {
+/*function Benefits() {
   return (
     <div className="benefits">
       <div className="benefit">8 дней марафона</div>
@@ -14,6 +14,14 @@ function Benefits() {
       </div>
     </div>
   );
+}*/
+function Benefits(props) {
+  const benefits = props.post.benefits.map((item) => (
+    <div className="benefit" key={item.toString()}>
+      {item}
+    </div>
+  ));
+  return benefits;
 }
 
 export default Benefits;

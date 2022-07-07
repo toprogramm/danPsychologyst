@@ -5,16 +5,18 @@ import "./App.css";
 import Head from "./modules/head/Head";
 import Post from "./modules/post/Post";
 import Interval from "./modules/interval/Interval";
+import Community from "./modules/community/Community";
+import posts from "./modules/post/posts";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div className="App">
       <Head />
       <Interval />
-      <Post />
-      <Post />
-      <Post />
+      <Post posts={posts} />
+
+      <Community />
     </div>
   );
 }

@@ -1,22 +1,25 @@
 import Benefits from "./benefits/Benefits";
-import img from "../img/marathone.png";
 import "./Post.scss";
 import Button from "../button/Button";
 
-function Post() {
-  const headTitle = "МАРАФОН";
-  return (
-    <div className="post">
-      <div className="head">{headTitle}</div>
+function Post(props) {
+  const posting = props.posts.map((post) => (
+    <div className="post" key={post.id.toString()}>
+      <div className="head" id={post.id}>
+        {post.type}
+      </div>
       <div className="content">
-        <img className="img" src={img} />
+        <img className="img" src={post.img} />
         <div className="subcontent">
-          <Button />
-          <Benefits />
+          <Button post={post} />
+          <div className="benefits">
+            <Benefits post={post} />
+          </div>
         </div>
       </div>
     </div>
-  );
+  ));
+  return <div>{posting}</div>;
 }
 
 export default Post;

@@ -1,11 +1,15 @@
-const marathone = "МАРАФОН";
-const training = "ТРЕНИНГ";
+const lessonsTypes = { marathone: "МАРАФОН", training: "ТРЕНИНГ" };
+const path = "./src/modules/img/";
+const png = ".png";
+
 const posts = [
   {
-    type: marathone,
+    id: 1,
+    type: lessonsTypes.marathone,
     name: "vtoroe_dihanie",
-    img: `./${this.name}.png`,
-    button: "ПОЛУЧИТЬ ПРОГРАММУ",
+    nameRus: "ВТОРОЕ ДЫХАНИЕ",
+    img: "./src/modules/img/vtoroe_dihanie.png",
+    buttonText: "ПОЛУЧИТЬ ПРОГРАММУ",
     benefits: [
       "8 дней марафона",
       "Прямой эфир каждый день",
@@ -14,10 +18,12 @@ const posts = [
     ],
   },
   {
-    type: training,
+    id: 2,
+    type: lessonsTypes.training,
     name: "upravlai_emociami",
-    img: `./${this.name}.png`,
-    button: "ПОЛУЧИТЬ ПРОГРАММУ",
+    nameRus: "УПРАВЛЯЙ ЭМОЦИЯМИ",
+    img: path + "upravlai_emociami" + png,
+    buttonText: "ПОЛУЧИТЬ ПРОГРАММУ",
     benefits: [
       "2 Занятия по 3 часа",
       "Прямой эфир",
@@ -26,7 +32,4 @@ const posts = [
     ],
   },
 ];
-!function check() {
-  console.log(posts[1].img);
-};
-export default check();
+export default posts;
