@@ -1,6 +1,7 @@
 import Benefits from "./benefits/Benefits";
 import "./Post.scss";
 import Button from "../button/Button";
+import Image from "../img/Image";
 
 function Post(props) {
   const posting = props.posts.map((post) => (
@@ -9,7 +10,8 @@ function Post(props) {
         {post.type}
       </div>
       <div className="content">
-        <img className="img" src={post.img} />
+        <Image post={post} />
+
         <div className="subcontent">
           <Button post={post} />
           <div className="benefits">
@@ -19,7 +21,7 @@ function Post(props) {
       </div>
     </div>
   ));
-  return <div>{posting}</div>;
+  return <div className="posts">{posting}</div>;
 }
 
 export default Post;

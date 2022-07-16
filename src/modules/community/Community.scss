@@ -1,13 +1,14 @@
 .communityImg {
-  position: inline;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 50%;
-  align-self: center;
+  width: 80%;
+
   @media (max-width: 600px) {
     width: 100%;
   }
 }
 .community {
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

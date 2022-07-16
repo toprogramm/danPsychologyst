@@ -8,7 +8,7 @@ const posts = [
     type: lessonsTypes.marathone,
     name: "vtoroe_dihanie",
     nameRus: "ВТОРОЕ ДЫХАНИЕ",
-    img: "./src/modules/img/vtoroe_dihanie.png",
+    img: "vtoroe_dihanie.png",
     buttonText: "ПОЛУЧИТЬ ПРОГРАММУ",
     benefits: [
       "8 дней марафона",
